@@ -13,4 +13,8 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 - WHERE
 - ORDER BY
 - LIMIT
+### Seção 04:
+- OPERADORES ARITMÉTICOS
+- OPERADORES DE COMPARAÇÃO
+
 
