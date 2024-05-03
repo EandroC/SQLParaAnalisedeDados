@@ -16,5 +16,6 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 ### Seção 04:
 - OPERADORES ARITMÉTICOS
 - OPERADORES DE COMPARAÇÃO
+- OPERADORES LÓGICOS
 
 
