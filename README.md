@@ -7,17 +7,17 @@ Este é um repositório do curso de SQL oferecido na Udemy, ministrado por Midor
 Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-de-dados/?couponCode=ST2MT43024).
 
 ## Seções
-### Seção 03:
+### Seção 03 - Comandos Básicos
 - SELECT
 - DISTINCT
 - WHERE
 - ORDER BY
 - LIMIT
-### Seção 04:
+### Seção 04 - Operadores
 - OPERADORES ARITMÉTICOS
 - OPERADORES DE COMPARAÇÃO
 - OPERADORES LÓGICOS
-### Seção 05:
+### Seção 05 - Funções Agregadas
 - FUNCÕES DE AGREGAÇÃO
 - GROUP BY
 
