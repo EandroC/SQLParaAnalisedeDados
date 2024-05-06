@@ -17,5 +17,7 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 - OPERADORES ARITMÉTICOS
 - OPERADORES DE COMPARAÇÃO
 - OPERADORES LÓGICOS
-
+### Seção 05:
+- FUNCÕES DE AGREGAÇÃO
+- GROUP BY
 
