@@ -105,3 +105,28 @@ FROM
 	sales.customers
 GROUP BY
 	state
+
+-- HAVING: Filtra grupos resultantes de uma consulta agregada.
+-- Exemplo 01
+SELECT 
+	state,
+	COUNT(*)
+FROM
+	sales.customers
+GROUP BY
+	state
+HAVING
+	COUNT(*) > 100
+
+-- Exemplo 02
+SELECT 
+	state,
+	COUNT(*)
+FROM
+	sales.customers
+WHERE
+	state <> 'MG'
+GROUP BY
+	state
+HAVING
+	COUNT(*) > 100
