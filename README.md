@@ -13,10 +13,12 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 - WHERE
 - ORDER BY
 - LIMIT
+
 ### Seção 04 - Operadores
 - OPERADORES ARITMÉTICOS
 - OPERADORES DE COMPARAÇÃO
 - OPERADORES LÓGICOS
+
 ### Seção 05 - Funções Agregadas
 - FUNCÕES DE AGREGAÇÃO
 - GROUP BY
