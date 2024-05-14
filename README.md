@@ -23,3 +23,9 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 - FUNCÕES DE AGREGAÇÃO
 - GROUP BY
 - HAVING
+
+### Seção 06 - Joins
+- LEFT JOIN
+- INNER JOIN
+- RIGHT JOIN
+- FULL JOIN
