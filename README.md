@@ -1,6 +1,6 @@
 # SQL PARA ANÁLISE DE DADOS: Do básico ao avançado
 
-Este é um repositório do curso de SQL oferecido na Udemy, ministrado por Midori Toyota. O curso é projetado para ajudar os alunos a aprender SQL do zero, utilizando PostgreSQL como o sistema de gerenciamento de banco de dados. 
+Este é um repositório do curso de SQL oferecido na Udemy, ministrado por Midori Toyota. O curso é projetado para ajudar a aprender os conceitos de SQL do zero, utilizando PostgreSQL como o sistema de gerenciamento de banco de dados. 
 
 ## ACESSO AO CURSO
 
