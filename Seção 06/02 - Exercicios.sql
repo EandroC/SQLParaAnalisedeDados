@@ -3,13 +3,13 @@
 -- (Exercício 1) Identifique quais as marcas de veículo mais visitada na tabela sales.funnel
 SELECT 
 	pro.brand,
-        COUNT(fu.visit_page_date) AS n_visitas
+        COUNT(fun.visit_page_date) AS n_visitas
 FROM
-	sales.funnel AS fu
+	sales.funnel AS fun
 LEFT JOIN
 	sales.products AS pro
 ON
-	fu.product_id = pro.product_id
+	fun.product_id = pro.product_id
 GROUP BY
 	pro.brand
 ORDER BY
