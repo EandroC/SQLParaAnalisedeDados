@@ -1,4 +1,4 @@
--- EXERCÍCIOS ########################################################################
+-- EXERCÍCIOS ##############################################################################
 
 -- (Exercício 1) Identifique quais as marcas de veículo mais visitada na tabela sales.funnel
 SELECT 
