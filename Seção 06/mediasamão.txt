@@ -1,0 +1,31 @@
+medidas_mensais = pd.DataFrame(columns=['Month_Year', 'Open', 'High', 'Low', 'Close', 'Volume', 'Market Cap'])
+
+for ano in range(2021, 2024):
+    ano_especifico = dados[dados['Start'].dt.year == ano]
+    for mes in range(1, 13):
+        mes_especifico = ano_especifico[ano_especifico['Start'].dt.month == mes]
+        data_linha = {
+            'Month_Year': f'{mes}/{ano}',
+            'Open': mes_especifico['Open'].mean(),
+            'High': mes_especifico['High'].max(),
+            'Low': mes_especifico['Low'].min(),
+            'Close': mes_especifico['Close'].mean(),
+            'Volume': mes_especifico['Volume'].mean(),
+            'Market Cap': mes_especifico['Market Cap'].mean()
+        }
+        
+        medidas_mensais = pd.concat([medidas_mensais, pd.DataFrame([data_linha])], ignore_index=True)
+
+medidas_mensais.head()
+
+
+
+
+plt.figure(figsize=(10, 6))
+plt.plot(medidas_mensais['Month_Year'], medidas_mensais['Close'], linestyle='-')
+plt.xlabel('Month_Year')
+plt.ylabel('Close')
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.tight_layout()
+plt.show()
