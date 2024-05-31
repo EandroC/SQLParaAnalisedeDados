@@ -30,3 +30,7 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 - INNER JOIN
 - RIGHT JOIN
 - FULL JOIN
+
+### Seção 07 - Unions
+- UNION
+- UNION ALL
