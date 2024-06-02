@@ -1,5 +1,5 @@
 -- UNION:  Combina os resultados de duas ou mais consultas SELECT em uma única tabela de resultados.
--- UNION ALL:  Similar ao UNION, mas inclui todos os registros duplicados.
+-- UNION ALL:  Similar ao UNION, porém inclui todos os registros duplicados.
 
 -- Exemplo 01
 SELECT
