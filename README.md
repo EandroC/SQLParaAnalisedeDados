@@ -34,3 +34,9 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 ### Seção 07 - Unions
 - UNION
 - UNION ALL
+
+### Seção 08 - Subqueries
+-- SUBQUERY NO WHERE
+-- SUBQUERY COM WITH
+-- SUBQUERY NO FROM
+-- SUBQUERY NO SELECT
