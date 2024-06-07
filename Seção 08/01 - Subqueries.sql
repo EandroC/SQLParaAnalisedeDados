@@ -1,4 +1,4 @@
--- SUBQUERY: Consulta embutida dentro de outra consulta, de forma aninhada.
+-- SUBQUERY: Consulta embutida dentro de uma outra consulta, de forma aninhada.
 -- Podem ser:
 -- SUBQUERY NO WHERE
 -- SUBQUERY COM WITH
