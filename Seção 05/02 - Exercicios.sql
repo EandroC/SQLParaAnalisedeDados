@@ -1,4 +1,4 @@
--- EXERCÍCIOS ################################################################################
+-- EXERCÍCIOS #########################################################################
 
 -- (Exercício 1) Conte quantos clientes da tabela sales.customers tem menos de 30 anos
 SELECT
