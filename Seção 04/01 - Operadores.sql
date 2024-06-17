@@ -39,7 +39,7 @@ FROM
 	sales.customers
 
 -- OPERADORES DE COMPARAÇÃO: Comparando valores, eles retornam verdadeiro ou falso.
--- = (igual a): Verifica se dois valores são iguais.
+-- = (igual a): Verifica se dois valores são exatamente iguais.
 -- != ou <> (diferente de): Verifica se dois valores são diferentes.
 -- < (menor que): Verifica se o primeiro valor é menor que o segundo.
 -- > (maior que): Verifica se o primeiro valor é maior que o segundo.
