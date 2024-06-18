@@ -40,3 +40,6 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 -- SUBQUERY COM WITH
 -- SUBQUERY NO FROM
 -- SUBQUERY NO SELECT
+
+### Seção 09 - Tratamentos de Dados
+-- CONVERSÃO DE UNIDADES
