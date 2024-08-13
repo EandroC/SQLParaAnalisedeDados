@@ -43,3 +43,4 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 
 ### Seção 09 - Tratamentos de Dados
 -- CONVERSÃO DE UNIDADES
+-- TRATAMENTO GERAL (CASE THEN e COALESCE)
