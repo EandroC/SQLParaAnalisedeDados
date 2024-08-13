@@ -16,3 +16,43 @@ SELECT
 -- Exemplo 04
 SELECT
 	CAST('2021-10-01' AS DATE) - CAST('2021-02-01' AS DATE)
+
+-- Tratamento de Geral
+-- Exemplo 01
+WITH faixa_de_renda AS(
+	SELECT
+		income,
+		CASE
+			WHEN income < 5000 THEN '0-5000'
+			WHEN income >= 5000 AND income < 10000 THEN '5000-10000'
+			WHEN income >= 10000 AND income < 15000 THEN '10000-15000'
+			ELSE '15000+'
+			END AS faixa_renda
+	FROM
+		sales.customers
+)
+SELECT
+	faixa_renda, COUNT(*)
+FROM
+	faixa_de_renda
+GROUP BY
+	faixa_renda
+
+-- Exemplo 02
+SELECT
+	*,
+	CASE	
+		WHEN population is not null THEN population
+		else (SELECT AVG(population) FROM temp_tables.regions)
+		END AS populacao_ajustada
+FROM
+	temp_tables.regions
+
+-- EXEMPLO 03
+SELECT
+	*,
+	COALESCE(population, (SELECT AVG(population) from temp_tables.regions)) as populacao_ajustada
+FROM
+	temp_tables.regions
+WHERE
+	population IS NULL
