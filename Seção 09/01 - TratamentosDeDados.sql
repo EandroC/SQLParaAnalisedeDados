@@ -56,3 +56,24 @@ FROM
 	temp_tables.regions
 WHERE
 	population IS NULL
+
+-- Tratamento de Texto
+-- UPPER: Converte todos os caracteres de uma string para maiúsculas.
+-- LOWER:  Converte todos os caracteres de uma string para minúsculas.
+-- TRIM: Remove espaços em branco do início e/ou fim de uma string.
+-- REPLACE: Substitui todas as ocorrências de um determinado substring por outro substring dentro de uma string.
+-- Exemplo 01
+SELECT 
+	UPPER('São Paulo') = 'SÃO PAULO'
+
+-- Exemplo 02
+SELECT 
+	LOWER('São Paulo') = 'são paulo'
+
+-- Exemplo 03
+SELECT 
+	TRIM('São Paulo    ') = 'São Paulo'
+
+-- Exemplo 04
+SELECT 
+	REPLACE('Sao Paulo', 'Sao', 'São') = 'São Paulo'
