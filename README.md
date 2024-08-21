@@ -45,3 +45,4 @@ Você pode acessar o curso [aqui](https://www.udemy.com/course/sql-para-analise-
 -- CONVERSÃO DE UNIDADES
 -- TRATAMENTO GERAL (CASE THEN e COALESCE)
 -- TRATAMENTO DE TEXTO (UPPER, LOWER, TRIM e REPLACE)
+-- TRATAMENTO DE DATAS (INTERVAL, DATE_TRUNC, EXTRACT)
