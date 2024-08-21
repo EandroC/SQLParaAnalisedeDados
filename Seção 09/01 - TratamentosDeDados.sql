@@ -77,3 +77,92 @@ SELECT
 -- Exemplo 04
 SELECT 
 	REPLACE('Sao Paulo', 'Sao', 'São') = 'São Paulo'
+
+-- Tratamento de Datas
+-- INTERVAL: Define um período de tempo, usado para somar/subtrair datas.
+-- DATE_TRUNC:Trunca datas/timestamps para uma unidade de tempo específica.
+-- EXTRACT: Extrai partes de datas/timestamps, como ano ou mês.
+-- Exemplo 01
+SELECT
+	current_date + INTERVAL'10 weeks'
+
+-- Exemplo 02
+SELECT
+	(current_date + INTERVAL'10 weeks')::date
+
+-- Exemplo 03
+SELECT
+	(current_date + INTERVAL'10 months')::date
+
+-- Exemplo 04
+SELECT
+	current_date + INTERVAL'10 hours'
+
+-- Exemplo 05
+SELECT
+	visit_page_date,
+	DATE_TRUNC('month', visit_page_date)::date
+FROM
+	sales.funnel
+
+-- Exemplo 06
+SELECT
+	DATE_TRUNC('month', visit_page_date)::date AS visit_page_month,
+	COUNT(*)
+FROM
+	sales.funnel
+GROUP BY
+	visit_page_month
+ORDER BY
+	visit_page_month DESC
+
+-- Exemplo 07
+SELECT
+	'2022-01-30'::date,
+	EXTRACT('dow' FROM '2022-01-30'::date)
+
+-- Exemplo 08
+SELECT
+	current_date,
+	EXTRACT('dow' FROM current_date)
+
+-- Exemplo 09
+SELECT
+	EXTRACT('dow' FROM visit_page_date) as dia_da_semana,
+	COUNT(*)
+FROM
+	sales.funnel
+GROUP BY
+	dia_da_semana
+ORDER BY
+	dia_da_semana
+
+-- Exemplo 10
+-- Por dia
+SELECT
+	(current_date - '2018-06-01')
+
+-- Exemplo 11
+-- Por semanas
+SELECT
+	(current_date - '2018-06-01')/7
+
+-- Exemplo 12
+-- Por meses
+SELECT
+	(current_date - '2018-06-01')/30
+
+-- Exemplo 13
+-- Por ano
+SELECT
+	(current_date - '2018-06-01')/365
+
+-- Exemplo 14
+-- Postgres não possui essa função
+SELECT
+	DATEDIFF('weeks', '2018-06-01', current_date)
+
+
+
+
+
