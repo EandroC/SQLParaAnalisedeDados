@@ -162,7 +162,24 @@ SELECT
 SELECT
 	DATEDIFF('weeks', '2018-06-01', current_date)
 
+-- Criação de funções
+-- Criando a função
+CREATE FUNCTION datediff(unidade varchar, data_inicial date, data_final date)
+RETURNS integer
+LANGUAGE sql
+AS
+$$
+	SELECT
+		CASE
+			WHEN unidade IN('d', 'days', 'day') THEN (data_inicial - data_final)
+			WHEN unidade IN('w', 'weeks', 'week') THEN (data_inicial - data_final)/7
+			WHEN unidade IN('m', 'months', 'month') THEN (data_inicial - data_final)/30
+			WHEN unidade IN('y', 'years', 'year') THEN (data_inicial - data_final)/365
+			END AS diferenca
+$$
 
-
+--Utilizando a função criada
+SELECT
+	datediff('weeks', '2018-06-01', current_date)
 
 
