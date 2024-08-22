@@ -178,8 +178,11 @@ $$
 			END AS diferenca
 $$
 
---Utilizando a função criada
+-- Utilizando a função criada
 SELECT
 	datediff('weeks', '2018-06-01', current_date)
+
+-- Caso precise apagar a função criada
+DROP FUNCTION datediff
 
 
